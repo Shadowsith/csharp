@@ -7,6 +7,7 @@ public class Auto{
     private float kW;
     private int seats;
 
+    //Constructors
     public Auto(){
         engine = "electric";
         engineStatus = false;
@@ -31,6 +32,39 @@ public class Auto{
             seats = Console.Read();
         }
     }
+
+    //Getters
+
+    public string getEngine(){
+        return engine;
+    }
+
+    public bool getEngineStatus(){
+        return engineStatus;
+    }
+
+    public float getKW(){
+        return kW;
+    }
+
+    public int getSeats(){
+        return seats;
+    }
+
+    //Setters
+
+    public void setEngine(string engineName){
+        engine = engineName;
+    }
+
+    public void setEngineStatus(bool status){
+        engineStatus = status;
+    }
+
+    public 
+
+
+    
     
     
 
