@@ -15,6 +15,13 @@ public class Auto{
         seats = 5;
     }
 
+    public Auto(string e, bool status, float kw, int s){
+        setEngine(e);
+        setEngineStatus(status);
+        setKW(kw);
+        setSeats(s);
+    }
+
     public Auto(bool input){
         if(input == true){
             Console.Write("Enter engine type: ");
@@ -61,17 +68,24 @@ public class Auto{
         engineStatus = status;
     }
 
-    public 
+    public void setKW(float kw){
+        kW = kw;
+    }
 
+    public void setSeats(int s){
+        seats = s;
+    }
 
+    //Other Methods
     
-    
-    
+    public void printAuto(){
+        Console.WriteLine(getEngine());
+        Console.WriteLine(getEngineStatus());
+        Console.WriteLine(getKW());
+        Console.WriteLine(getSeats());
+    }
 
-
-
-    //public Auto(string engine, float kW, int seats){}
-
+    //Main
     public static void Main(){
     
     }
