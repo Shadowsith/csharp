@@ -6,13 +6,14 @@ public class Auto{
     private bool engineStatus; 
     private float kW;
     private int seats;
+    private double mileage;
 
     //Constructors
     public Auto(){
-        engine = "electric";
-        engineStatus = false;
-        kW = 75.5f;
-        seats = 5;
+        setEngine("electric");
+        setEngineStatus(false);
+        setKW(75.5f);
+        setSeats(5);
     }
 
     public Auto(string e, bool status, float kw, int s){
@@ -58,6 +59,10 @@ public class Auto{
         return seats;
     }
 
+    public double getMileAge(){
+        return mileage;
+    }
+
     //Setters
 
     public void setEngine(string engineName){
@@ -75,6 +80,11 @@ public class Auto{
     public void setSeats(int s){
         seats = s;
     }
+
+    public void setMileAge(double ma){
+        mileage = ma;
+    }
+
 
     //Other Methods
     
