@@ -93,6 +93,7 @@ public class Auto{
         Console.WriteLine(getEngineStatus());
         Console.WriteLine(getKW());
         Console.WriteLine(getSeats());
+        Console.WriteLine(getMileAge());
     }
 
     //Main
